@@ -1,0 +1,19 @@
+### 全局配置文件 ###
+server:
+  port: 8080 #端口配置
+
+spring:
+  application:
+    name: choutuan_takeout  #应用名称
+
+  datasource: #数据库配置
+    druid:
+      url:  jdbc:mysql://localhost:3306/chou_tuan
+      username: root
+      password: 1234
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  configuration: #MyBatis 配置文件位置
+    map-underscore-to-camel-case: true #开启驼峰命名
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启控制台 SQL 日志打印
